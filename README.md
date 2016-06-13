@@ -8,7 +8,7 @@ Currently experimental.
 
 ## Patch Index
 
-Check out [INDEX.md](./INDEX.md) for a full listing of patches and descriptions.
+Check out [INDEX.txt](./INDEX.txt) for a full listing of patches and descriptions.
 
 ## Compatibility
 
