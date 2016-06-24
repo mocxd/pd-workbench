@@ -1,2 +1,3 @@
 microtone.pd - microtonal keyboard
 seq_suite_X_X.pd - suite of sequencing tools
+ob_wex_tuts.pd - following tutorial series - https://www.youtube.com/playlist?list=PL0dqIhYnzlnPeQAC5mRzKq5HLwfBGRYaO
