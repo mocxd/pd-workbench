@@ -3,3 +3,4 @@ seq_suite_X_X.pd - suite of sequencing tools
 ob_wex_tuts.pd - following tutorial series - https://www.youtube.com/playlist?list=PL0dqIhYnzlnPeQAC5mRzKq5HLwfBGRYaO
 midi_sync.pd - Should get midi sync stuff but I can't get it to work - test on other non Windows machine?
 metro_clock.pd - Serve Clock info to other patches - sends traditional MIDI clock stuff + ticks, replaces metro_clock in seq_suite
+po_sync.pd - Sync TE Pocket Operators to PD!
