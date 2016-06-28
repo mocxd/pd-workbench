@@ -1,4 +1,4 @@
-#N canvas 1990 50 355 94 10;
+#N canvas 1256 57 355 94 10;
 #N canvas 197 177 906 723 metro_clock 0;
 #X obj 31 19 cnv 15 840 170 empty empty Input 20 12 0 14 -233017 -66577
 0;
@@ -13,7 +13,7 @@
 #X obj 365 100 bng 35 250 50 0 empty empty STOP 5 17 0 10 -250716 -1
 -262144;
 #X obj 402 100 nbx 5 35 10 500 0 1 empty empty BPM 64 19 0 20 -212212
--66577 -66577 144 256;
+-66577 -66577 140 256;
 #X obj 291 100 bng 35 250 50 0 empty empty PLAY 5 17 0 10 -163783 -262144
 -1;
 #X obj 511 100 tgl 35 1 empty empty Master 0 17 0 10 -138547 -51199
@@ -89,9 +89,9 @@
 #X obj 31 209 cnv 15 300 480 empty empty Clock 20 12 0 14 -208803 -66577
 0;
 #X msg 91 467 60000;
-#X floatatom 143 467 5 0 0 0 - - -, f 5;
+#X floatatom 143 467 5 0 0 0 - - -;
 #X obj 91 494 /;
-#X floatatom 172 538 5 0 0 0 - - -, f 5;
+#X floatatom 172 538 5 0 0 0 - - -;
 #X msg 162 359 0;
 #X obj 91 521 / 4;
 #X text 211 538 ms / tick;
@@ -99,7 +99,7 @@
 #X obj 101 440 t b b;
 #X obj 153 440 r bpm;
 #X obj 139 586 / 6;
-#X floatatom 178 603 5 0 0 0 - - -, f 5;
+#X floatatom 178 603 5 0 0 0 - - -;
 #X text 217 603 ms / clock;
 #X obj 101 332 s reset;
 #X obj 69 278 r play;
@@ -140,6 +140,7 @@
 #X connect 8 0 4 0;
 #X connect 9 0 1 0;
 #X connect 10 0 66 0;
+#X connect 11 0 8 0;
 #X connect 12 0 14 0;
 #X connect 13 0 14 1;
 #X connect 14 0 11 0;
