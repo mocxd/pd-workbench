@@ -1,5 +1,5 @@
-#N canvas 2394 50 264 121 10;
-#N canvas 549 85 450 559 po_sync 0;
+#N canvas 740 197 264 121 10;
+#N canvas 602 85 450 559 po_sync 0;
 #X obj 148 188 noise~;
 #X obj 148 214 *~;
 #X obj 204 198 vline~;
@@ -72,8 +72,6 @@
 #X obj 292 135 vsl 15 128 0 2 0 1 empty empty gain_compensation 0 -9
 0 10 -262144 -1 -1 12700 1;
 #X obj 150 266 *~;
-#X msg 160 310 set \$1;
-#X obj 151 336 dac~ 0;
 #X obj 21 37 cnv 15 98 83 empty empty PO_SYNC 10 12 0 18 -83481 -228856
 0;
 #X obj 99 84 tgl 15 0 empty empty sync_to_master -72 10 0 8 -107926
@@ -84,9 +82,11 @@
 -1;
 #X obj 21 104 cnv 15 98 15 empty empty channel_output 4 8 0 8 -162280
 -228856 0;
-#X obj 96 105 nbx 2 14 0 50 0 1 empty empty empty -72 10 0 8 -162280
+#X obj 96 105 nbx 2 14 1 16 0 1 empty empty empty -72 10 0 8 -162280
 -228856 -191407 1 256;
 #X obj 130 150 osc~;
+#X obj 142 320 dac~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
+#X obj 149 293 demux~ . . . . . . . . . . . . . . . . .;
 #X connect 0 0 1 0;
 #X connect 1 0 8 0;
 #X connect 2 0 1 1;
@@ -105,13 +105,28 @@
 #X connect 8 0 13 0;
 #X connect 9 0 10 0;
 #X connect 10 0 3 0;
-#X connect 10 0 19 0;
+#X connect 10 0 17 0;
 #X connect 11 0 10 0;
 #X connect 12 0 13 1;
-#X connect 13 0 15 0;
-#X connect 14 0 15 0;
-#X connect 17 0 9 1;
-#X connect 21 0 14 0;
-#X connect 22 0 1 0;
+#X connect 13 0 22 0;
+#X connect 15 0 9 1;
+#X connect 19 0 22 0;
+#X connect 20 0 1 0;
+#X connect 22 1 21 0;
+#X connect 22 2 21 1;
+#X connect 22 3 21 2;
+#X connect 22 4 21 3;
+#X connect 22 5 21 4;
+#X connect 22 6 21 5;
+#X connect 22 7 21 6;
+#X connect 22 8 21 7;
+#X connect 22 9 21 8;
+#X connect 22 10 21 9;
+#X connect 22 11 21 10;
+#X connect 22 12 21 11;
+#X connect 22 13 21 12;
+#X connect 22 14 21 13;
+#X connect 22 15 21 14;
+#X connect 22 16 21 15;
 #X coords 0 -1 1 1 100 100 1 20 20;
 #X restore 83 9 pd po_sync;
