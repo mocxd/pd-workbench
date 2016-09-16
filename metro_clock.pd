@@ -1,4 +1,4 @@
-#N canvas 1256 57 355 94 10;
+#N canvas 607 239 355 94 10;
 #N canvas 197 177 906 723 metro_clock 0;
 #X obj 31 19 cnv 15 840 170 empty empty Input 20 12 0 14 -233017 -66577
 0;
@@ -13,7 +13,7 @@
 #X obj 365 100 bng 35 250 50 0 empty empty STOP 5 17 0 10 -250716 -1
 -262144;
 #X obj 402 100 nbx 5 35 10 500 0 1 empty empty BPM 64 19 0 20 -212212
--66577 -66577 140 256;
+-66577 -66577 120 256;
 #X obj 291 100 bng 35 250 50 0 empty empty PLAY 5 17 0 10 -163783 -262144
 -1;
 #X obj 511 100 tgl 35 1 empty empty Master 0 17 0 10 -138547 -51199
@@ -187,4 +187,4 @@
 #X connect 65 0 50 0;
 #X connect 67 0 50 1;
 #X coords 0 -1 1 1 320 55 2 270 90;
-#X restore 16 17 pd metro_clock;
+#X restore 18 16 pd metro_clock;
